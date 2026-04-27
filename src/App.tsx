@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { HUD } from './components/HUD';
 import { Environment } from './components/Environment';
@@ -11,11 +12,13 @@ export default function App() {
       <HUD />
       <div className="absolute inset-0">
         <Canvas shadows>
-          <fog attach="fog" args={['#0c4a6e', 100, 2000]} />
-          <Environment />
-          <Scenery />
-          <Airplane />
-          <Rings />
+          <Suspense fallback={null}>
+            <fog attach="fog" args={['#0c4a6e', 100, 2000]} />
+            <Environment />
+            <Scenery />
+            <Airplane />
+            <Rings />
+          </Suspense>
         </Canvas>
       </div>
     </main>
