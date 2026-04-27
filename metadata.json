@@ -1,0 +1,5 @@
+{
+  "name": "Flight Simulator",
+  "description": "A browser-based 3D flight simulator featuring realistic flight physics, a chase camera, taking off, and atmospheric visuals.",
+  "requestFramePermissions": []
+}
