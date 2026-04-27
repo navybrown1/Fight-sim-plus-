@@ -8,7 +8,7 @@ import { Scenery } from './components/Scenery';
 
 export default function App() {
   return (
-    <main className="w-screen h-screen bg-sky-900 text-white font-sans overflow-hidden">
+    <main className="relative w-screen h-screen bg-sky-900 text-white font-sans overflow-hidden">
       <HUD />
       <div className="absolute inset-0">
         <Canvas shadows>

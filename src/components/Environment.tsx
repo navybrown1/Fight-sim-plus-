@@ -1,10 +1,9 @@
-import { Sky, Environment as DreiEnvironment, Grid } from '@react-three/drei';
+import { Sky, Grid } from '@react-three/drei';
 
 export function Environment() {
   return (
     <>
       <Sky sunPosition={[100, 20, 100]} turbidity={0.1} rayleigh={0.5} />
-      <DreiEnvironment preset="sunset" />
       <ambientLight intensity={0.4} />
       <directionalLight position={[100, 50, 100]} intensity={1.5} castShadow />
       
